@@ -13,6 +13,7 @@ namespace Car_Rental_CO._1
         {
         //testing github desktop
         //the online version is working well
+        //second time
        static int SSN = 0;
 
         //Checking the validity of the register number (PK) it has to be unique value and consists of 6 digits
