@@ -1,0 +1,1 @@
+alter table cusrent modify(CUS_SNN number(14))

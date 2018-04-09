@@ -1,0 +1,7 @@
+alter table car add(block_num number(10));
+alter table car add( street    number(10)  );
+alter table car add(  governorate  varchar2(20));
+
+
+alter table garage add(BankAccountNum number(10));
+alter table customer add(BankAccountNum number(10));
