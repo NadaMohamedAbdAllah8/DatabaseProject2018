@@ -62,6 +62,7 @@
             this.Controls.Add(this.buttonBack);
             this.Name = "ShowRentals";
             this.Text = "ShowRentals";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShowRentals_FormClosing);
             this.Load += new System.EventHandler(this.ShowRentals_Load);
             this.ResumeLayout(false);
 
