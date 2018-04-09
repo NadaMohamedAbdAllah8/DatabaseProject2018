@@ -165,7 +165,7 @@ namespace Car_Rental_CO._1
             }
 
 
-            //2-inser address and driving licence
+            //2-insert address and driving licence
             OracleCommand cmd2 = new OracleCommand();
             cmd2.Connection = conn;
 
@@ -206,6 +206,10 @@ namespace Car_Rental_CO._1
 
             //Done
             MessageBox.Show("Sign up scussefully", "Sucess", MessageBoxButtons.OK);
+           
+            //Keep userSSN
+            HelperFunctions.SetSSN(Convert.ToInt32(textBoxSSN_signup.Text));
+
             userConForm = new UserControlForm();
             userConForm.Show();
             this.Hide();

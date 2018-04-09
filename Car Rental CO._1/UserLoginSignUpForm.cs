@@ -53,6 +53,9 @@ namespace Car_Rental_CO._1
 
             conn.Close();
 
+            //Keep userSSN
+            HelperFunctions.SetSSN(Convert.ToInt32(textBoxSSNLogIn.Text));
+
             userForm = new UserControlForm();
             userForm.Show();
 

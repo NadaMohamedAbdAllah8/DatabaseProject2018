@@ -79,6 +79,13 @@ namespace Car_Rental_CO._1
 
         private void buttonShow_Click(object sender, EventArgs e)
         {
+            if(dateTimePicker1.Value.Year>2018||dateTimePicker1.Value.Year<1800)
+            {
+                MessageBox.Show("Wrong year!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             double InsuranceCosts = 0.0, RepairCosts = 0.0, MaintenanceCosts = 0.0, PurchasingCarsCosts = 0.0, total = 0.0;
 
             conn = new OracleConnection(constr);
@@ -208,7 +215,22 @@ namespace Car_Rental_CO._1
             OracleCommand cmd5 = new OracleCommand();
             cmd5.Connection = conn;
 
-            try
+            if(HelperFunctions.MonthYearExist(dateTimePicker1)==1)
+            {
+                cmd5.CommandText = "UpdateExpenditures";
+                cmd5.CommandType = CommandType.StoredProcedure;
+
+                cmd5.Parameters.Add("SentYear", dateTimePicker1.Value.Year);
+                cmd5.Parameters.Add("SentMonth", dateTimePicker1.Value.Month);
+                cmd5.Parameters.Add("ins", InsuranceCosts);
+                cmd5.Parameters.Add("rCost", RepairCosts);
+                cmd5.Parameters.Add("mCost", MaintenanceCosts);
+                cmd5.Parameters.Add("pCost", PurchasingCarsCosts);
+
+                cmd5.ExecuteNonQuery();
+            }
+
+            else
             {
                 cmd5.CommandText = "Insertexpenditures";
                 cmd5.CommandType = CommandType.StoredProcedure;
@@ -223,20 +245,7 @@ namespace Car_Rental_CO._1
                 cmd5.ExecuteNonQuery();
             }
 
-            catch
-            {
-                cmd5.CommandText = "UpdateExpenditures";
-                cmd5.CommandType = CommandType.StoredProcedure;
-
-                cmd5.Parameters.Add("SentYear", dateTimePicker1.Value.Year);
-                cmd5.Parameters.Add("SentMonth", dateTimePicker1.Value.Month);
-                cmd5.Parameters.Add("ins", InsuranceCosts);
-                cmd5.Parameters.Add("rCost", RepairCosts);
-                cmd5.Parameters.Add("mCost", MaintenanceCosts);
-                cmd5.Parameters.Add("pCost", PurchasingCarsCosts);
-
-                cmd5.ExecuteNonQuery();
-            }
+            
         
             conn.Close();
         }
