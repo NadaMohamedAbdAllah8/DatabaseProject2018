@@ -10,7 +10,9 @@ using System.Windows.Forms;
 namespace Car_Rental_CO._1
 {
     class HelperFunctions
-    {
+        {
+        //testing github desktop
+        //the online version is working well
        static int SSN = 0;
 
         //Checking the validity of the register number (PK) it has to be unique value and consists of 6 digits
