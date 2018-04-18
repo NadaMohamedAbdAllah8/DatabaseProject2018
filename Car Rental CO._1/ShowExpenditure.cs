@@ -249,5 +249,15 @@ namespace Car_Rental_CO._1
         
             conn.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ShowExpenditure_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

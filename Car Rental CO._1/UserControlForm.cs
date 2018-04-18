@@ -15,7 +15,9 @@ namespace Car_Rental_CO._1
         private Button buttonClose;
         private Button buttonShowRentals;
         UserLoginSignUpForm loginSignupForm;
+        private Button button1;
         ShowRentals ShowRentalsForm;
+        UserDeleteRentalcs DelRental_User;
 
         public UserControlForm()
         {
@@ -39,6 +41,7 @@ namespace Car_Rental_CO._1
         {
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonShowRentals = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonClose
@@ -61,13 +64,25 @@ namespace Car_Rental_CO._1
             this.buttonShowRentals.UseVisualStyleBackColor = true;
             this.buttonShowRentals.Click += new System.EventHandler(this.buttonShowRentals_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 92);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Delete Rental";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UserControlForm
             // 
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonShowRentals);
             this.Controls.Add(this.buttonClose);
             this.Name = "UserControlForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserControlForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserControlForm_FormClosed);
             this.ResumeLayout(false);
 
         }
@@ -86,6 +101,18 @@ namespace Car_Rental_CO._1
         {
             ShowRentalsForm = new ShowRentals();
             ShowRentalsForm.Show();
+            this.Hide();
+        }
+
+        private void UserControlForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DelRental_User = new UserDeleteRentalcs();
+            DelRental_User.Show();
             this.Hide();
         }
     }

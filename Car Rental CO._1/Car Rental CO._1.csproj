@@ -87,6 +87,12 @@
     <Compile Include="ShowRentals.Designer.cs">
       <DependentUpon>ShowRentals.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowRevenuesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowRevenuesForm.Designer.cs">
+      <DependentUpon>ShowRevenuesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCarInfoFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="UserControlForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDeleteRentalcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDeleteRentalcs.Designer.cs">
+      <DependentUpon>UserDeleteRentalcs.cs</DependentUpon>
     </Compile>
     <Compile Include="UserLoginSignUpForm.cs">
       <SubType>Form</SubType>
@@ -134,11 +146,17 @@
     <EmbeddedResource Include="ShowRentals.resx">
       <DependentUpon>ShowRentals.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowRevenuesForm.resx">
+      <DependentUpon>ShowRevenuesForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateCarInfoFrom.resx">
       <DependentUpon>UpdateCarInfoFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlForm.resx">
       <DependentUpon>UserControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDeleteRentalcs.resx">
+      <DependentUpon>UserDeleteRentalcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserSignUp_only.resx">
       <DependentUpon>UserSignUp_only.cs</DependentUpon>

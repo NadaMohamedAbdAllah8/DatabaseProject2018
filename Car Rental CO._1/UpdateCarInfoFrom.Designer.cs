@@ -418,6 +418,8 @@
             this.Controls.Add(this.buttonBack);
             this.Name = "UpdateCarInfoFrom";
             this.Text = "Update Car Info.";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateCarInfoFrom_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UpdateCarInfoFrom_FormClosed);
             this.Load += new System.EventHandler(this.UpdateCarInfoFrom_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

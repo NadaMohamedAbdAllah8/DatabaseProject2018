@@ -63,6 +63,7 @@
             this.Name = "ShowRentals";
             this.Text = "ShowRentals";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShowRentals_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowRentals_FormClosed);
             this.Load += new System.EventHandler(this.ShowRentals_Load);
             this.ResumeLayout(false);
 

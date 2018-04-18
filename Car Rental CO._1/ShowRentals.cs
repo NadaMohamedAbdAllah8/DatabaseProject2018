@@ -56,5 +56,10 @@ namespace Car_Rental_CO._1
         {
             this.Dispose();
         }
+
+        private void ShowRentals_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

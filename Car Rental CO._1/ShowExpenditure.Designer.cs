@@ -52,6 +52,7 @@
             this.label1.Size = new System.Drawing.Size(140, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Choose a month and a year";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // buttonShow
             // 
@@ -188,6 +189,7 @@
             this.Name = "ShowExpenditure";
             this.Text = "ShowExpenditure";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ShowExpenditure_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowExpenditure_FormClosed);
             this.Load += new System.EventHandler(this.ShowExpenditure_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

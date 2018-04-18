@@ -16,6 +16,7 @@ namespace Car_Rental_CO._1
         InsertNewCar InsertForm = new InsertNewCar();
         DeleteCar dForm = new DeleteCar();
         ShowExpenditure ShoWEx;
+        ShowRevenuesForm ShowRevForm;
 
         public ControlForm()
         {
@@ -59,6 +60,23 @@ namespace Car_Rental_CO._1
             ShoWEx = new ShowExpenditure();
             ShoWEx.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowRevForm = new ShowRevenuesForm();
+            ShowRevForm.Show();
+            this.Hide();
+        }
+
+        private void ControlForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void ControlForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

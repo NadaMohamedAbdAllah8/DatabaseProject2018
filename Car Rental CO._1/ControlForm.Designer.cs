@@ -33,6 +33,7 @@
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonDelete_car = new System.Windows.Forms.Button();
             this.buttonShowExpenditure = new System.Windows.Forms.Button();
+            this.buttonShowRevenues = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonInsert
@@ -85,11 +86,22 @@
             this.buttonShowExpenditure.UseVisualStyleBackColor = true;
             this.buttonShowExpenditure.Click += new System.EventHandler(this.buttonShowExpenditure_Click);
             // 
+            // buttonShowRevenues
+            // 
+            this.buttonShowRevenues.Location = new System.Drawing.Point(21, 249);
+            this.buttonShowRevenues.Name = "buttonShowRevenues";
+            this.buttonShowRevenues.Size = new System.Drawing.Size(100, 35);
+            this.buttonShowRevenues.TabIndex = 5;
+            this.buttonShowRevenues.Text = "Show Revenues";
+            this.buttonShowRevenues.UseVisualStyleBackColor = true;
+            this.buttonShowRevenues.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
+            this.Controls.Add(this.buttonShowRevenues);
             this.Controls.Add(this.buttonShowExpenditure);
             this.Controls.Add(this.buttonDelete_car);
             this.Controls.Add(this.buttonClose);
@@ -97,6 +109,8 @@
             this.Controls.Add(this.buttonInsert);
             this.Name = "ControlForm";
             this.Text = "ControlForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ControlForm_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ControlForm_FormClosed);
             this.Load += new System.EventHandler(this.ControlForm_Load);
             this.ResumeLayout(false);
 
@@ -109,5 +123,6 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonDelete_car;
         private System.Windows.Forms.Button buttonShowExpenditure;
+        private System.Windows.Forms.Button buttonShowRevenues;
     }
 }

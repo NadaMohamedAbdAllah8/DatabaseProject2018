@@ -347,6 +347,8 @@
             this.Controls.Add(this.label1);
             this.Name = "InsertNewCar";
             this.Text = "Insert New Car";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InsertNewCar_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InsertNewCar_FormClosed);
             this.Load += new System.EventHandler(this.InsertNewCar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

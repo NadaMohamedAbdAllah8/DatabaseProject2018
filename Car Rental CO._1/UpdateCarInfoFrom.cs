@@ -273,5 +273,15 @@ from car where registration_number=:regNum ";
         {
 
         }
+
+        private void UpdateCarInfoFrom_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void UpdateCarInfoFrom_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

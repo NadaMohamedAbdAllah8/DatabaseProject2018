@@ -11,9 +11,6 @@ namespace Car_Rental_CO._1
 {
     class HelperFunctions
         {
-        //testing github desktop
-        //the online version is working well
-        //second time
        static int SSN = 0;
 
         //Checking the validity of the register number (PK) it has to be unique value and consists of 6 digits
@@ -130,6 +127,32 @@ namespace Car_Rental_CO._1
             return e;
         }
 
+        static public int MonthYearExistRev(DateTimePicker dtp)
+        {
+            string constr = "Data Source=orcl;User ID=scott;Password=tiger;";
+            OracleConnection conn;
+            conn = new OracleConnection(constr);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.Parameters.Add("SentMonth", dtp.Value.Month);
+            cmd.Parameters.Add("SentYear", dtp.Value.Year);
+            cmd.Parameters.Add("Exist", OracleDbType.Int32).Direction = System.Data.ParameterDirection.Output;
+
+            cmd.CommandText = "MonthYearExistRev";
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+            int e = Convert.ToInt32(cmd.Parameters["Exist"].Value.ToString());
+
+            return e;
+        }
+
         static public void SetSSN(int sentSSN)
         {
             SSN = sentSSN;
@@ -139,5 +162,7 @@ namespace Car_Rental_CO._1
         {
            return SSN ;
         }
+
+
     }
 }

@@ -82,6 +82,8 @@
             this.Controls.Add(this.buttonDelete);
             this.Name = "DeleteCar";
             this.Text = "DeleteCar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DeleteCar_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DeleteCar_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

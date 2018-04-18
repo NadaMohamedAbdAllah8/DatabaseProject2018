@@ -182,5 +182,15 @@ namespace Car_Rental_CO._1
             cForm.Show();
             this.Close();
         }
+
+        private void InsertNewCar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void InsertNewCar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
