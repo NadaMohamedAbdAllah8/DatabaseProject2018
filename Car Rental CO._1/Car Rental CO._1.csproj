@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddorUpdateTelephones_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddorUpdateTelephones_User.Designer.cs">
+      <DependentUpon>AddorUpdateTelephones_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,10 @@
     <Compile Include="InsertNewCar.Designer.cs">
       <DependentUpon>InsertNewCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageGarages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageGarages.Designer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShowExpenditure.cs">
@@ -99,6 +109,12 @@
     <Compile Include="UpdateCarInfoFrom.Designer.cs">
       <DependentUpon>UpdateCarInfoFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateInfo_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateInfo_User.Designer.cs">
+      <DependentUpon>UpdateInfo_User.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,12 +132,27 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserSignUp_only.Designer.cs" />
+    <Compile Include="User_AddTelephones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_AddTelephones.Designer.cs">
+      <DependentUpon>User_AddTelephones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_ChangePasswordForm.Designer.cs">
+      <DependentUpon>User_ChangePasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_ViewRental_Report.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>User_ViewRental_Report.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AddorUpdateTelephones_User.resx">
+      <DependentUpon>AddorUpdateTelephones_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlForm.resx">
       <DependentUpon>ControlForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +183,9 @@
     <EmbeddedResource Include="UpdateCarInfoFrom.resx">
       <DependentUpon>UpdateCarInfoFrom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInfo_User.resx">
+      <DependentUpon>UpdateInfo_User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlForm.resx">
       <DependentUpon>UserControlForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +194,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserSignUp_only.resx">
       <DependentUpon>UserSignUp_only.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_AddTelephones.resx">
+      <DependentUpon>User_AddTelephones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_ChangePasswordForm.resx">
+      <DependentUpon>User_ChangePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_ViewRental_Report.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

@@ -29,8 +29,9 @@ namespace Car_Rental_CO._1
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ctrlForm_user = new UserControlForm();
             ctrlForm_user.Show();
+            this.Hide();
             this.Dispose();
         }
 

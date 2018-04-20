@@ -18,9 +18,9 @@ namespace Car_Rental_CO._1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ControlForm());
+           // Application.Run(new ControlForm());
             
-           Application.Run(new UserLoginSignUpForm());
+          Application.Run(new UserLoginSignUpForm());
         }       
     }
 }

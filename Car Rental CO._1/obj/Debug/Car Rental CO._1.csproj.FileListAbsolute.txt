@@ -85,12 +85,11 @@ H:\Faculty\2nd Semester\Database\Database Project\Implementation\DatabaseProject
 H:\Faculty\2nd Semester\Database\Database Project\Implementation\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserControlForm.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserSignUp_only.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.csproj.GenerateResource.Cache
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Car Rental CO._1.exe.config
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.exe
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.pdb
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Car Rental CO._1.exe
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Car Rental CO._1.pdb
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Oracle.DataAccess.dll
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Car Rental CO._1.exe.config
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\bin\Debug\Car Rental CO._1.pdb
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.AddorUpdateTelephones_User.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.ControlForm.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.DeleteCar.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.InsertNewCar.resources
@@ -99,7 +98,12 @@ H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.ShowRentals.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.ShowRevenuesForm.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UpdateCarInfoFrom.resources
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UpdateInfo_User.resources
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserControlForm.resources
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserSignUp_only.resources
-H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.csproj.GenerateResource.Cache
 H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserDeleteRentalcs.resources
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.UserSignUp_only.resources
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.User_AddTelephones.resources
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car_Rental_CO._1.User_ChangePasswordForm.resources
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.csproj.GenerateResource.Cache
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.exe
+H:\Faculty\2nd Semester\Database\Database Project\Implementation github desktop\DatabaseProject2018\Car Rental CO._1\obj\Debug\Car Rental CO._1.pdb

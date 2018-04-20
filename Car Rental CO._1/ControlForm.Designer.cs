@@ -28,37 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonInsert = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.buttonDelete_car = new System.Windows.Forms.Button();
-            this.buttonShowExpenditure = new System.Windows.Forms.Button();
-            this.buttonShowRevenues = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.manageGraggesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageCarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRevenuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateAnExistsingCarInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonInsert
-            // 
-            this.buttonInsert.Location = new System.Drawing.Point(21, 12);
-            this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(100, 35);
-            this.buttonInsert.TabIndex = 0;
-            this.buttonInsert.Text = "Insert car info.";
-            this.buttonInsert.UseVisualStyleBackColor = true;
-            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(21, 71);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(100, 35);
-            this.buttonUpdate.TabIndex = 1;
-            this.buttonUpdate.Text = "Update car info.";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(322, 302);
+            this.buttonClose.Location = new System.Drawing.Point(581, 326);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 23);
             this.buttonClose.TabIndex = 2;
@@ -66,63 +49,99 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // buttonDelete_car
+            // menuStrip1
             // 
-            this.buttonDelete_car.Location = new System.Drawing.Point(21, 134);
-            this.buttonDelete_car.Name = "buttonDelete_car";
-            this.buttonDelete_car.Size = new System.Drawing.Size(100, 35);
-            this.buttonDelete_car.TabIndex = 3;
-            this.buttonDelete_car.Text = "Delete car";
-            this.buttonDelete_car.UseVisualStyleBackColor = true;
-            this.buttonDelete_car.Click += new System.EventHandler(this.buttonDelete_car_Click);
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageCarsToolStripMenuItem,
+            this.updateAnExistsingCarInfoToolStripMenuItem,
+            this.deleteCarToolStripMenuItem,
+            this.showToolStripMenuItem,
+            this.showRevenuesToolStripMenuItem,
+            this.manageGraggesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(684, 361);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuAdmin";
             // 
-            // buttonShowExpenditure
+            // manageGraggesToolStripMenuItem
             // 
-            this.buttonShowExpenditure.Location = new System.Drawing.Point(21, 189);
-            this.buttonShowExpenditure.Name = "buttonShowExpenditure";
-            this.buttonShowExpenditure.Size = new System.Drawing.Size(100, 35);
-            this.buttonShowExpenditure.TabIndex = 4;
-            this.buttonShowExpenditure.Text = "Show Expenditure";
-            this.buttonShowExpenditure.UseVisualStyleBackColor = true;
-            this.buttonShowExpenditure.Click += new System.EventHandler(this.buttonShowExpenditure_Click);
+            this.manageGraggesToolStripMenuItem.AutoSize = false;
+            this.manageGraggesToolStripMenuItem.Name = "manageGraggesToolStripMenuItem";
+            this.manageGraggesToolStripMenuItem.Size = new System.Drawing.Size(150, 35);
+            this.manageGraggesToolStripMenuItem.Text = "Manage Garages";
+            this.manageGraggesToolStripMenuItem.Click += new System.EventHandler(this.manageGraggesToolStripMenuItem_Click);
             // 
-            // buttonShowRevenues
+            // manageCarsToolStripMenuItem
             // 
-            this.buttonShowRevenues.Location = new System.Drawing.Point(21, 249);
-            this.buttonShowRevenues.Name = "buttonShowRevenues";
-            this.buttonShowRevenues.Size = new System.Drawing.Size(100, 35);
-            this.buttonShowRevenues.TabIndex = 5;
-            this.buttonShowRevenues.Text = "Show Revenues";
-            this.buttonShowRevenues.UseVisualStyleBackColor = true;
-            this.buttonShowRevenues.Click += new System.EventHandler(this.button1_Click);
+            this.manageCarsToolStripMenuItem.AutoSize = false;
+            this.manageCarsToolStripMenuItem.Name = "manageCarsToolStripMenuItem";
+            this.manageCarsToolStripMenuItem.Size = new System.Drawing.Size(150, 35);
+            this.manageCarsToolStripMenuItem.Text = "Insert a new car info.";
+            this.manageCarsToolStripMenuItem.Click += new System.EventHandler(this.manageCarsToolStripMenuItem_Click);
+            // 
+            // showToolStripMenuItem
+            // 
+            this.showToolStripMenuItem.AutoSize = false;
+            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
+            this.showToolStripMenuItem.Size = new System.Drawing.Size(150, 35);
+            this.showToolStripMenuItem.Text = "Show Expenditure";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
+            // 
+            // showRevenuesToolStripMenuItem
+            // 
+            this.showRevenuesToolStripMenuItem.AutoSize = false;
+            this.showRevenuesToolStripMenuItem.Name = "showRevenuesToolStripMenuItem";
+            this.showRevenuesToolStripMenuItem.Size = new System.Drawing.Size(150, 35);
+            this.showRevenuesToolStripMenuItem.Text = "Show Revenues";
+            this.showRevenuesToolStripMenuItem.Click += new System.EventHandler(this.showRevenuesToolStripMenuItem_Click);
+            // 
+            // updateAnExistsingCarInfoToolStripMenuItem
+            // 
+            this.updateAnExistsingCarInfoToolStripMenuItem.AutoSize = false;
+            this.updateAnExistsingCarInfoToolStripMenuItem.Name = "updateAnExistsingCarInfoToolStripMenuItem";
+            this.updateAnExistsingCarInfoToolStripMenuItem.Size = new System.Drawing.Size(150, 35);
+            this.updateAnExistsingCarInfoToolStripMenuItem.Text = "Update an existing car info.";
+            this.updateAnExistsingCarInfoToolStripMenuItem.Click += new System.EventHandler(this.updateAnExistsingCarInfoToolStripMenuItem_Click);
+            // 
+            // deleteCarToolStripMenuItem
+            // 
+            this.deleteCarToolStripMenuItem.AutoSize = false;
+            this.deleteCarToolStripMenuItem.Name = "deleteCarToolStripMenuItem";
+            this.deleteCarToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.deleteCarToolStripMenuItem.Text = "Delete car";
+            this.deleteCarToolStripMenuItem.Click += new System.EventHandler(this.deleteCarToolStripMenuItem_Click);
             // 
             // ControlForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 361);
-            this.Controls.Add(this.buttonShowRevenues);
-            this.Controls.Add(this.buttonShowExpenditure);
-            this.Controls.Add(this.buttonDelete_car);
             this.Controls.Add(this.buttonClose);
-            this.Controls.Add(this.buttonUpdate);
-            this.Controls.Add(this.buttonInsert);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "ControlForm";
             this.Text = "ControlForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ControlForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ControlForm_FormClosed);
             this.Load += new System.EventHandler(this.ControlForm_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonInsert;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Button buttonDelete_car;
-        private System.Windows.Forms.Button buttonShowExpenditure;
-        private System.Windows.Forms.Button buttonShowRevenues;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem manageGraggesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem manageCarsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showRevenuesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem updateAnExistsingCarInfoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteCarToolStripMenuItem;
     }
 }

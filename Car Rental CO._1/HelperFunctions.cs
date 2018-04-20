@@ -101,6 +101,32 @@ namespace Car_Rental_CO._1
             return e;
         }
 
+        static public int UserExist_UpdateHelper(string Password)
+        {
+            string constr = "Data Source=orcl;User ID=scott;Password=tiger;";
+            OracleConnection conn;
+            conn = new OracleConnection(constr);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.Parameters.Add("UserSSN", GetSSN());
+            cmd.Parameters.Add("UserPassword", Password);
+            cmd.Parameters.Add("Exist", OracleDbType.Int32).Direction = System.Data.ParameterDirection.Output;
+
+            cmd.CommandText = "UserExists";
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+            int e = Convert.ToInt32(cmd.Parameters["Exist"].Value.ToString());
+
+            return e;
+        }
+
         static public int MonthYearExist(DateTimePicker dtp)
         {
                      string constr = "Data Source=orcl;User ID=scott;Password=tiger;";
